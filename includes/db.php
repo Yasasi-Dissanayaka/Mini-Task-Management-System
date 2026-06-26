@@ -1,7 +1,7 @@
 <?php
 $host ="localhost";
 $user ="root";
-$pass = "MySql1111";
+$pass = "";
 $db = "intern_task_system";
 $conn=mysqli_connect($host,$user,$pass,$db);
 if (!$conn){
