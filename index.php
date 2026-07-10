@@ -1,5 +1,5 @@
 <?php
-include "include/db.php";
+include "includes/db.php";
 $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
 ?>
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
             </td>
         </tr>
 
-    <?php}?>
+    <?php } ?>
         
     </table>
 
