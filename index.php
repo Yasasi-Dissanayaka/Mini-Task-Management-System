@@ -48,7 +48,7 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
             <th>Priority</th>
             <th>Created_at</th>
             <th>Status</th>
-            <th>Actions</th>
+            <th colspan="2">Actions</th>
         </tr>
     <?php while($row = $result->fetch_assoc()){?>
         <tr>
@@ -65,7 +65,9 @@ $result = $conn->query("SELECT * FROM tasks ORDER BY id DESC");
                 <a href="actions/update-task.php?id=<?php echo $row['id'];?>">
                     Update status
                 </a>
-
+            </td>
+            
+            <td>
                 <a href="actions/delete-task.php?id=<?php echo $row['id'];?>">
                     Delete
                 </a>
